@@ -9,6 +9,7 @@ import {
   useState,
 } from "react";
 import { useMediaQuery } from "usehooks-ts";
+import UserItem from "./UserItem";
 
 export default function Navigation() {
   const pathname = usePathname();
@@ -113,7 +114,7 @@ export default function Navigation() {
           <ChevronLeft className="h-6 w-6" />
         </div>
         <div>
-          <p>Action items</p>
+          <UserItem />
         </div>
         <div className="mt-4">
           <p>Documents</p>
