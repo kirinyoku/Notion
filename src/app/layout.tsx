@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Toaster } from "sonner";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import ConvexProvider from "@/components/providers/ConvexProvider";
@@ -27,6 +28,7 @@ export default function RootLayout({
             disableTransitionOnChange
             storageKey="theme"
           >
+            <Toaster position="bottom-right" />
             {children}
           </ThemeProvider>
         </ConvexProvider>
