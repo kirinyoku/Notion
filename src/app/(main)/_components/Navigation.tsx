@@ -2,9 +2,11 @@ import { cn } from "@/lib/utils";
 import {
   ChevronLeft,
   MenuIcon,
+  Plus,
   PlusCircle,
   Search,
   Settings,
+  Trash,
 } from "lucide-react";
 import { usePathname } from "next/navigation";
 import {
@@ -21,6 +23,11 @@ import { api } from "../../../../convex/_generated/api";
 import { toast } from "sonner";
 import Item from "./Item";
 import DocumentList from "./DocumentList";
+import {
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+} from "@/components/ui/popover";
 
 export default function Navigation() {
   const pathname = usePathname();
@@ -143,6 +150,7 @@ export default function Navigation() {
         </div>
         <div className="mt-4">
           <DocumentList />
+          <Item onClick={handleCreate} icon={Plus} label="Add a page" />
         </div>
         <div
           onMouseDown={handleMouseDown}
