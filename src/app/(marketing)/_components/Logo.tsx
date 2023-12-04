@@ -11,18 +11,11 @@ export default function Logo() {
   return (
     <div className="hidden md:flex items-center gap-x-2">
       <Image
-        src="./logo.svg"
+        src="/logo.png"
         height="40"
         width="40"
         alt="logo"
-        className="dark:hidden"
-      />
-      <Image
-        src="./logo-dark.svg"
-        height="40"
-        width="40"
-        alt="logo"
-        className="hidden dark:block"
+        className="w-8 h-8"
       />
       <p className={cn("font-semibold", poppins.className)}>Notion</p>
     </div>
