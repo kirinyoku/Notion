@@ -34,7 +34,7 @@ export default function UserItem() {
         </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent
-        className="w-80 bg-[#1f1f1f]"
+        className="w-80"
         align="start"
         alignOffset={11}
         forceMount

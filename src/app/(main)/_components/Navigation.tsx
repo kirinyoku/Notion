@@ -167,7 +167,7 @@ export default function Navigation() {
             </PopoverTrigger>
             <PopoverContent
               side={isMobile ? "bottom" : "right"}
-              className="p-0 w-72 dark:bg-[#1f1f1f]"
+              className="p-0 w-72"
             >
               <TrashBox />
             </PopoverContent>

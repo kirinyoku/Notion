@@ -136,7 +136,7 @@ export default function Item({
               </div>
             </DropdownMenuTrigger>
             <DropdownMenuContent
-              className="w-60 dark:bg-[#1f1f1f]"
+              className="w-60"
               align="start"
               side="right"
               forceMount
